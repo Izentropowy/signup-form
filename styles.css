@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    color: rgb(223, 223, 223);
+    box-sizing: border-box;
+    background: url(/images/cockpit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer {
+    background-color: white;
+}
+
+.inner {
+    background-color: blue;
+    display: flex;
+}
+
+footer {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    min-height: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+}
