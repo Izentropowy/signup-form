@@ -5,6 +5,7 @@
 
 html, body {
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -62,9 +63,99 @@ html, body {
 
 /* main content styling */
 
-.main {
-    background-color: blueviolet;
+form {
+    background-color: #fffcfc;
     flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.info,
+.content,
+.submitter {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.info {
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.info,
+.content span {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.wrapper {
+    background-color: white;
+    box-shadow: 3px 3px rgba(128, 128, 128, 0.2);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.content span {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 3px;
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: rgb(92, 92, 92);
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    height: 25px;
+    width: 230px;
+}
+
+.content div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content div:nth-child(even) {
+    padding-right: 50px;
+}
+
+/* submitter styling*/
+
+.submitter {
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+button {
+    display: block;
+    margin-bottom: 25px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 700;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 800;
+}
+
 
 
