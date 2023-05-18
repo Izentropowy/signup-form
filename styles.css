@@ -1,42 +1,70 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(/Norse-Bold.otf);
+}
+
 html, body {
     height: 100%;
-    color: rgb(223, 223, 223);
+}
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background: url(/images/cockpit.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .container {
+    display: flex;
     height: 100%;
+}
+
+/* footer styling */
+
+.footer {
+    background: url(/images/unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 2;
+    height: 100%;
+    position: relative;
+}
+
+.bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 150px;
+    margin-top: 200px;
+    padding: 10px;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.outer {
-    background-color: white;
+.bar img {
+    max-height: 100%;
 }
 
-.inner {
-    background-color: blue;
-    display: flex;
+.bar span {
+    font-family: "Norse", "sans-serif";
+    font-size: 5rem;
 }
 
-footer {
+.credit{
     position: absolute;
-    bottom: 100px;
+    bottom: 0;
+    margin-bottom: 30px;
+    display: inline-block;
     width: 100%;
-    min-height: 150px;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    color: aliceblue;
 }
 
-ul {
-    list-style-type: none;
-    margin: 20px;
-    padding: 0;
+/* main content styling */
+
+.main {
+    background-color: blueviolet;
+    flex: 3;
 }
+
+
