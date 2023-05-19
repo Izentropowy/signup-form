@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Norse';
-    src: url('/Norse-Bold.otf');
+    src: url(./Norse-Bold.otf);
 }
 
 html, body {
@@ -22,7 +22,7 @@ html, body {
 /* footer styling */
 
 .footer {
-    background: url('/images/unsplash.jpg');
+    background: url(./images/unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
